@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-// ✅ 10 Blogs Data
+// ✅ Blogs Data (Same as before)
 const blogs = [
   {
     slug: "How-to-Select-Tiles-for-The-Living-Room",
@@ -16,12 +16,12 @@ const blogs = [
   {
     slug: "innovative-natural-stone-flooring-ideas-for-contemporary-living-spaces",
     date: "26 October, 2024",
-        title: "Innovative Natural Stone Flooring Ideas for Contemporary Living Spaces",
-        excerpt: "If you need to select the right tile...",
+    title: "Innovative Natural Stone Flooring Ideas for Contemporary Living Spaces",
+    excerpt: "If you need to select the right tile...",
     image: "/b2.jpg"
   },
   {
-    slug: "/enhancing-interior-spaces-with-natural-stone-wall",
+    slug: "enhancing-interior-spaces-with-natural-stone-wall",
     date: "12 Dec, 2023",
     title: "Enhancing Interior Spaces with Natural Stone Wall Cladding Tiles: A Timeless Elegance",
     excerpt: "The foundation of modern interiors...",
@@ -62,7 +62,6 @@ const blogs = [
     excerpt: "Porcelain tiles for durability and style...",
     image: "/b7.jpg"
   },
-
   {
     slug: "tile-cleaning-and-maintenance-tips",
     date: "10 May, 2022",
@@ -75,10 +74,13 @@ const blogs = [
 export default function BlogPage() {
   return (
     <>
-      <Navbar />
+      {/* 1. NAVBAR (White Background) */}
+      <div className="w-full bg-white">
+        <Navbar />
+      </div>
 
-      {/* 🔥 HERO IMAGE */}
-      <div className="relative w-full h-screen">
+      {/* 2. HERO IMAGE SECTION (White Text) */}
+      <div className="relative w-full h-[60vh] md:h-[70vh] overflow-hidden">
         <Image
           src="/blog_hero.jpg"
           alt="Blog Banner"
@@ -86,58 +88,66 @@ export default function BlogPage() {
           className="object-cover"
           priority
         />
-
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-white text-5xl md:text-7xl font-serif tracking-widest">
+        {/* Dark Overlay for contrast */}
+        <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center">
+          <h1 className="text-white text-5xl md:text-7xl font-serif tracking-[0.3em] uppercase">
             BLOG
           </h1>
+          <div className="w-20 h-[1px] bg-white/50 mt-6"></div>
         </div>
       </div>
 
-      {/* BLOG SECTION */}
-      <div className="bg-white py-20 px-[5%]">
+      {/* 3. BLOG LIST SECTION */}
+      <div className="bg-white py-24 px-[5%]">
         <div className="max-w-7xl mx-auto">
-
-          <h2 className="text-3xl font-serif text-center mb-16 uppercase tracking-widest">
+          {/* Main Section Heading */}
+          <h2 className="text-3xl font-serif text-center mb-20 uppercase tracking-[0.2em] text-gray-800">
             Our Insights
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
             {blogs.map((blog) => (
-              <Link href={`/blog/${blog.slug}`} key={blog.slug} className="group">
+              <Link href={`/blog/${blog.slug}`} key={blog.slug} className="group block">
+                {/* Curved Image Container */}
+                <div className="relative h-72 w-full mb-8 overflow-hidden rounded-tl-[80px] rounded-br-[80px] shadow-sm">
+                  <Image 
+                    src={blog.image} 
+                    alt={blog.title} 
+                    fill 
+                    className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                  />
+                </div>
 
-                 {/* Curved Image Container */}
-                              <div className="relative h-64 w-full mb-6 overflow-hidden rounded-tl-[80px] rounded-br-[80px] shadow-lg group">
-                                <Image 
-                                  src={blog.image} 
-                                  alt={blog.title} 
-                                  fill 
-                                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
-                              </div>
+                {/* Content Container */}
+                <div className="space-y-4">
+                  {/* Date - Gold Tone */}
+                  <p className="text-[#b89b5e] text-[10px] font-sans font-bold uppercase tracking-[0.2em]">
+                    {blog.date}
+                  </p>
 
-                <p className="text-[#b89b5e] text-xs font-bold mb-1">
-                  {blog.date}
-                </p>
+                  {/* Blog Title - Serif Font */}
+                  <h3 className="text-xl font-serif text-gray-800 group-hover:text-[#b89b5e] transition duration-500 leading-snug uppercase tracking-wide">
+                    {blog.title}
+                  </h3>
 
-                <h2 className="text-lg font-bold text-gray-800 group-hover:text-[#b89b5e] transition">
-                  {blog.title}
-                </h2>
+                  {/* Excerpt - Sans Font */}
+                  <p className="text-gray-500 text-sm font-sans font-light leading-relaxed line-clamp-3 tracking-wide">
+                    {blog.excerpt}
+                  </p>
 
-                <p className="text-gray-500 text-sm mt-2 line-clamp-3">
-                  {blog.excerpt}
-                </p>
-
-                <span className="inline-block mt-3 text-xs font-bold border-b border-[#b89b5e]">
-                  READ MORE →
-                </span>
-
+                  {/* Read More Link */}
+                  <div className="pt-4">
+                    <span className="inline-block text-[10px] font-sans font-bold border-b border-[#b89b5e] pb-1 uppercase tracking-[0.2em] text-gray-800">
+                      READ MORE →
+                    </span>
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
-
         </div>
       </div>
+
       <Footer />
     </>
   );

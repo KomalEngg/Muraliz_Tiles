@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
@@ -8,38 +9,51 @@ export default function KarishmaPage() {
   return (
     <div className="min-h-screen bg-white text-[#333] font-serif selection:bg-[#C1B087] selection:text-white">
       <Navbar />
-      {/* 1. HERO SECTION */}
-      <section className="relative h-[75vh] w-full flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-black/40 z-10" />
+      
+      {/* 1. HERO SECTION (Updated to match Blog style) */}
+      <section className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center overflow-hidden">
+        {/* Dark Overlay for Text Visibility */}
+        <div className="absolute inset-0 bg-black/45 z-10" />
+        
         <Image
           src="/hero-tiles.png"
-          alt="Karishma Specialization"
+          alt="Muraliz Specialization"
           fill
           className="object-cover"
           priority
         />
+        
+        {/* Text Style Matched to Blog Page */}
         <div className="relative z-20 text-center text-white px-4">
-          <h1 className="text-3xl md:text-5xl tracking-[0.3em] font-light leading-relaxed uppercase">
-            Specialization <br />
-            in Tiles, Stones <br />
-            Marbles & Inlays
+        <Image
+    src="/blog_small.png"
+    alt="Logo"
+    width={40}
+    height={40}
+    className="mb-4 opacity-90 mx-auto" 
+  />
+          <h1 className="text-4xl md:text-6xl tracking-[0.3em] font-serif font-light leading-tight uppercase">
+            OUR STORY
           </h1>
-          <p className="mt-6 text-sm tracking-[0.4em] opacity-90 uppercase font-sans">Since 1987</p>
+          {/* Thin Divider Line like Blog Page */}
+          <div className="w-20 h-[1px] bg-white/50 mx-auto mt-6 mb-4"></div>
+          <p className="text-[10px] tracking-[0.5em] opacity-90 uppercase font-sans text-white">
+            Specialization in Tiles, Stones & Marbles
+          </p>
         </div>
       </section>
 
       {/* 2. OUR JOURNEY SECTION */}
       <section className="py-24 px-6 max-w-6xl mx-auto text-center">
         <div className="flex justify-center mb-6 text-[#C1B087]">
-          {/* Custom Lotus/Logo SVG */}
           <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
           </svg>
         </div>
         <h2 className="text-3xl tracking-[0.2em] uppercase mb-10">Our Journey</h2>
-        <p className="text-gray-600 leading-relaxed max-w-4xl mx-auto text-sm md:text-base font-sans">
-          Karishma is a renowned family-owned business since three decades that has established itself as a leader in the tiles industry...
-          The name "Karishma" embodies delicacy and distinctiveness, symbolizing the creation of magical surfaces.
+        <p className="text-gray-500 leading-relaxed max-w-4xl mx-auto text-sm md:text-base font-sans font-light">
+          Muraliz is a renowned family-owned business since three decades that has established itself as a leader in the tiles industry...
+          The name "Muraliz" embodies delicacy and distinctiveness, symbolizing the creation of magical surfaces.
         </p>
 
         {/* Timeline Component */}
@@ -55,20 +69,20 @@ export default function KarishmaPage() {
             <div key={idx} className="flex flex-col items-center relative w-full md:w-1/4">
               {item.type === 'top' && (
                 <div className="hidden md:block mb-6 text-center">
-                  <p className="font-bold text-[11px] uppercase tracking-wider text-[#C1B087]">{item.loc}</p>
-                  <p className="text-gray-400 text-[10px]">{item.city}</p>
+                  <p className="font-bold text-[11px] uppercase tracking-wider text-[#C1B087] font-sans">{item.loc}</p>
+                  <p className="text-gray-400 text-[10px] font-sans">{item.city}</p>
                   <div className="w-[1px] h-10 bg-gray-300 mx-auto mt-2" />
                 </div>
               )}
 
-              <div className="bg-[#C1B087] text-white px-10 py-3 rounded-full text-xl font-medium shadow-md z-20 hover:scale-105 transition-transform cursor-default">
+              <div className="bg-[#C1B087] text-white px-10 py-3 rounded-full text-xl font-medium shadow-md z-20 hover:scale-105 transition-transform cursor-default font-sans">
                 {item.year}
               </div>
 
               <div className={`mt-4 md:mt-0 md:absolute ${item.type === 'top' ? 'md:hidden' : 'md:top-16'} text-center`}>
                 <div className="hidden md:block w-[1px] h-10 bg-gray-300 mx-auto mb-2" />
-                <p className="font-bold text-[11px] uppercase tracking-wider text-[#C1B087]">{item.loc}</p>
-                <p className="text-gray-400 text-[10px]">{item.city}</p>
+                <p className="font-bold text-[11px] uppercase tracking-wider text-[#C1B087] font-sans">{item.loc}</p>
+                <p className="text-gray-400 text-[10px] font-sans">{item.city}</p>
               </div>
             </div>
           ))}
@@ -92,7 +106,7 @@ export default function KarishmaPage() {
                 <h3 className="uppercase tracking-[0.2em] font-bold text-sm mb-6 border-b-2 border-transparent group-hover:border-[#C1B087] transition-all pb-1">
                   {founder.name}
                 </h3>
-                <p className="text-[12px] text-gray-500 leading-relaxed font-sans text-justify">
+                <p className="text-[12px] text-gray-500 leading-relaxed font-sans text-justify px-4">
                   Visionary leadership and a deep passion for surface design have been the cornerstone of our excellence. We continue to inspire, innovate and shape the future of tiles and stones.
                 </p>
               </div>
@@ -105,30 +119,24 @@ export default function KarishmaPage() {
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl tracking-[0.2em] uppercase mb-6 font-serif">Our Philosophy</h2>
-          <p className="italic text-gray-400 max-w-2xl mx-auto text-sm">
+          <p className="italic text-gray-400 max-w-2xl mx-auto text-sm font-sans">
             "We believe that the spaces we inhabit play a crucial role in our well-being and quality of life."
           </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-2 gap-4 auto-rows-[200px] md:auto-rows-[250px]">
-          {/* Left Side Small Images */}
           <div className="relative col-span-1 row-span-1">
             <Image src="/a1.png" alt="Detail 1" fill className="object-cover" />
           </div>
           <div className="relative col-span-1 row-span-1">
             <Image src="/a3.png" alt="Detail 2" fill className="object-cover" />
           </div>
-
-          {/* CENTER LARGE IMAGE (2 Columns wide, 2 Rows high) */}
           <div className="relative col-span-1 row-span-1 order-first md:order-none">
             <Image src="/a2.png" alt="Main Craftsmanship" fill className="object-cover" />
           </div>
-
-          {/* Right Side Small Images */}
           <div className="relative col-span-1 row-span-1">
             <Image src="/a4.png" alt="Detail 3" fill className="object-cover" />
           </div>
-
         </div>
       </section>
 
@@ -136,10 +144,10 @@ export default function KarishmaPage() {
       <section className="py-24 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
-            <h2 className="uppercase tracking-widest text-sm mb-6">Subscribe Our Newsletter</h2>
-            <div className="flex max-w-md mx-auto shadow-sm">
-              <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-3 bg-gray-50 text-xs outline-none focus:bg-white transition-colors" />
-              <button className="bg-[#555] text-white px-8 py-3 text-[10px] uppercase tracking-[0.2em] hover:bg-black transition-colors">Send</button>
+            <h2 className="uppercase tracking-[0.3em] font-sans text-[10px] font-bold mb-6 text-gray-800">Subscribe Our Newsletter</h2>
+            <div className="flex max-w-md mx-auto shadow-sm border border-gray-100">
+              <input type="email" placeholder="Enter your email" className="flex-1 px-4 py-3 bg-gray-50 text-[10px] font-sans outline-none focus:bg-white transition-colors" />
+              <button className="bg-[#333] text-white px-8 py-3 text-[10px] font-sans uppercase tracking-[0.2em] hover:bg-black transition-colors">Send</button>
             </div>
           </div>
 

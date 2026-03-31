@@ -90,7 +90,7 @@ const blogContent = {
       <>
         <p>
           The foundation of contemporary interior design lies in integrating functionality and aesthetics. Within this context, the choice of flooring plays an important role in shaping the aesthetics and atmosphere of living spaces.Natural stone tiles, with its timeless elegance and durability, emerges as a versatile option for flooring. Each stone variety becomes a unique canvas for innovative design, blending tradition with contemporary flair.
-           From classic marble to rough slates, Karishma Tiles offers natural stone flooring options that elevate your home to an artful expression of style and substance. In this article, we explore the various ways in which natural stone flooring can be infused in modern living spaces with sophistication, functionality, and a touch of luxury.
+           From classic marble to rough slates, Muraliz Tiles offers natural stone flooring options that elevate your home to an artful expression of style and substance. In this article, we explore the various ways in which natural stone flooring can be infused in modern living spaces with sophistication, functionality, and a touch of luxury.
         </p>
         <p>
           Geometric Elegance with Marble Mosaics : Marble, a symbol of luxury, transforms the art of mosaics. Intricate patterns and geometric designs crafted from marble tiles redefine the typical expectations of stone flooring. Whether employed in herringbone patterns or hexagonal arrangements marble mosaics bring a sense of elegance to contemporary living spaces. The contrasting colours or the interplay of polished finishes adds depth and visual interest to the floor. This innovative use of marble as natural stone flooring introduces timeless aesthetics and becomes a statement piece within modern interiors.
@@ -105,7 +105,7 @@ const blogContent = {
           Rough Charm of Slate : Slate, known for its roughness and organic charm introduces a range of grey hues to interior design. From deep to muted tones, slate tiles offer a sense of natural sophistication. The irregular textures and layers in slate create a visual appeal, making it a favourite for those seeking a unique and distinctive natural stone flooring option. Innovative patterns can be achieved by playing with the irregular shapes and sizes of slate tiles—this versatility of slate bridges the gap between modern aesthetics and the raw beauty of nature.
         </p>
         <p>
-          At Karishma Tiles and Stones, we promote the innovative use of natural stone flooring in modern living spaces, shaping floors into a work of art that elevates the aesthetic appeal and functionality of the entire space. As homeowners continue to explore the potential of natural stone, the fusion of tradition and innovation unfolds, creating timeless living environments.
+          At Muraliz Tiles and Stones, we promote the innovative use of natural stone flooring in modern living spaces, shaping floors into a work of art that elevates the aesthetic appeal and functionality of the entire space. As homeowners continue to explore the potential of natural stone, the fusion of tradition and innovation unfolds, creating timeless living environments.
         </p>
       </>
     )
@@ -120,17 +120,17 @@ const blogContent = {
           The utilisation of natural stone wall cladding tiles in interior design stands as a testament to timeless elegance. These magnificent tiles not only add a touch of sophistication but also offer an array of benefits that elevate the ambience of any space. Let’s delve into the captivating world of natural stone wall cladding tiles and uncover the reasons behind their enduring popularity.
   </p>
   <p>
-    Versatility : Natural stone wall cladding tiles are a versatile option for enhancing the visual appeal of both interior and exterior walls. From rustic charm to contemporary chic, these tiles seamlessly blend with various design styles, allowing for endless creativity in décor. Their versatility extends to different types of stone, including slate, marble, limestone, and granite, offering a wide range of textures, colors, and patterns to suit diverse preferences. From rustic charm to contemporary elegance, the exclusive collection offered by Karishma Tiles, caters to varied aesthetic preferences, ensuring a perfect fit for every space.
+    Versatility : Natural stone wall cladding tiles are a versatile option for enhancing the visual appeal of both interior and exterior walls. From rustic charm to contemporary chic, these tiles seamlessly blend with various design styles, allowing for endless creativity in décor. Their versatility extends to different types of stone, including slate, marble, limestone, and granite, offering a wide range of textures, colors, and patterns to suit diverse preferences. From rustic charm to contemporary elegance, the exclusive collection offered by Muraliz Tiles, caters to varied aesthetic preferences, ensuring a perfect fit for every space.
   </p>
   <p>
     Durability and Longevity : One of the most compelling reasons to opt for natural stone wall cladding tiles is their exceptional durability. These tiles are crafted from authentic, robust materials that withstand the test of time, making them a long-term investment for any space. Their resilience against wear, tear, and environmental factors ensures that the walls maintain their allure for years to come, requiring minimal maintenance.
   </p>
   <p>
-    Timeless Aesthetic Appeal : The inherent beauty of natural stone lies in its unique patterns, textures, and colours, which lend an unparalleled aesthetic appeal. Whether it’s the rugged charm of slate or the opulent allure of marble, each type of stone exudes a distinct and timeless elegance. The earthy tones and organic feel of these tiles create a sense of warmth and sophistication, adding character to any setting. Crafted from the finest quality materials, Karishma Tiles' natural stone wall cladding tiles boast exceptional durability, serving as a long-term investment for home interiors.
+    Timeless Aesthetic Appeal : The inherent beauty of natural stone lies in its unique patterns, textures, and colours, which lend an unparalleled aesthetic appeal. Whether it’s the rugged charm of slate or the opulent allure of marble, each type of stone exudes a distinct and timeless elegance. The earthy tones and organic feel of these tiles create a sense of warmth and sophistication, adding character to any setting. Crafted from the finest quality materials, Muraliz Tiles' natural stone wall cladding tiles boast exceptional durability, serving as a long-term investment for home interiors.
   </p>
   <p>
     
-Eco-Friendly Choice : Choosing natural stone wall cladding tiles also aligns with sustainable design practices. At Karishma Tiles, we prioritize sustainability. Our natural stone wall cladding tiles are eco-conscious options, sourced from natural materials with minimal environmental impact. Moreover, their longevity and recyclability contribute to reducing waste, making them an eco-conscious choice for conscientious designers and homeowners.
+Eco-Friendly Choice : Choosing natural stone wall cladding tiles also aligns with sustainable design practices. At Muraliz Tiles, we prioritize sustainability. Our natural stone wall cladding tiles are eco-conscious options, sourced from natural materials with minimal environmental impact. Moreover, their longevity and recyclability contribute to reducing waste, making them an eco-conscious choice for conscientious designers and homeowners.
   </p>
   <p>
     Thermal Insulation and Energy Efficiency : Beyond their aesthetic prowess, natural stone wall cladding tiles offer practical benefits such as thermal insulation. These tiles possess natural insulating properties, helping to regulate indoor temperatures and contribute to energy efficiency. By providing a buffer against heat transfer, they assist in maintaining comfortable interiors throughout the year, reducing reliance on artificial heating and cooling systems.
@@ -140,7 +140,7 @@ Eco-Friendly Choice : Choosing natural stone wall cladding tiles also aligns wit
 
   </p>
   <p>
-    Karishma Tiles & Stones' collection of natural stone wall cladding tiles is an embodiment of durability, elegance, sustainability, and practicality. Elevate your spaces with our versatile range, crafted to bring enduring beauty and charm to your interiors or exteriors. Embrace the sophistication of natural stone and transform your walls with Karishma Tiles and stones.
+    Muraliz Tiles & Stones' collection of natural stone wall cladding tiles is an embodiment of durability, elegance, sustainability, and practicality. Elevate your spaces with our versatile range, crafted to bring enduring beauty and charm to your interiors or exteriors. Embrace the sophistication of natural stone and transform your walls with Muraliz Tiles and stones.
   </p>
       </>
     )
@@ -151,31 +151,31 @@ Eco-Friendly Choice : Choosing natural stone wall cladding tiles also aligns wit
     content: (
   <>
     <p>
-      The art of crafting luxury bathroom tiles lies in the seamless fusion of design and functionality. Each tile contributes to an ambience of refined elegance, setting the stage for a luxurious bathing experience. Immerse yourself in the epitome of sophistication with Karishma Tiles' opulent collection of Luxury Bathroom Tiles. Karishma Tiles takes pride in curating an exclusive array of Luxury Bathroom Tiles, each a testament to precision and aesthetics. From sleek, modern designs to timeless classics, our tiles seamlessly blend into diverse design schemes, ensuring your bathroom exudes opulence. In this article, let us delve into the characteristics of luxury bathroom tiles, exploring their intricate design and unparalleled functionality.
+      The art of crafting luxury bathroom tiles lies in the seamless fusion of design and functionality. Each tile contributes to an ambience of refined elegance, setting the stage for a luxurious bathing experience. Immerse yourself in the epitome of sophistication with Muraliz Tiles' opulent collection of Luxury Bathroom Tiles. Muraliz Tiles takes pride in curating an exclusive array of Luxury Bathroom Tiles, each a testament to precision and aesthetics. From sleek, modern designs to timeless classics, our tiles seamlessly blend into diverse design schemes, ensuring your bathroom exudes opulence. In this article, let us delve into the characteristics of luxury bathroom tiles, exploring their intricate design and unparalleled functionality.
     </p>
 
     <p>
-      Unparalleled Artistry : Artistry forms the essence of exceptional tile design, seamlessly merging skill and creative fervor to transcend conventional boundaries, imbuing spaces with an ethereal essence of sophistication and enduring beauty. Karishma Tiles employs cutting-edge techniques and a keen eye for detail to ensure each tile stands as a masterpiece in its own right.
+      Unparalleled Artistry : Artistry forms the essence of exceptional tile design, seamlessly merging skill and creative fervor to transcend conventional boundaries, imbuing spaces with an ethereal essence of sophistication and enduring beauty. Muraliz Tiles employs cutting-edge techniques and a keen eye for detail to ensure each tile stands as a masterpiece in its own right.
     </p>
 
     <p>
-      Mix of Materials : The interplay of diverse materials in tile design creates a tactile experience, adding depth and character to bathroom spaces. It’s the fusion of these elements that enriches the interior atmosphere. Our collection transcends the ordinary, offering a blend of materials that redefine luxury. Karishma Tiles provides a canvas of options, allowing you to personalize your bathroom with textures and finishes that resonate with your style.
+      Mix of Materials : The interplay of diverse materials in tile design creates a tactile experience, adding depth and character to bathroom spaces. It’s the fusion of these elements that enriches the interior atmosphere. Our collection transcends the ordinary, offering a blend of materials that redefine luxury. Muraliz Tiles provides a canvas of options, allowing you to personalize your bathroom with textures and finishes that resonate with your style.
     </p>
 
     <p>
-      Enduring Elegance : Luxury is an investment in timeless elegance. Karishma Tiles' Luxury Bathroom Tiles stand the test of time, boasting durability and aesthetic appeal. They ensure that spaces retain their charm and sophistication, making each moment spent in them truly luxurious.
+      Enduring Elegance : Luxury is an investment in timeless elegance. Muraliz Tiles' Luxury Bathroom Tiles stand the test of time, boasting durability and aesthetic appeal. They ensure that spaces retain their charm and sophistication, making each moment spent in them truly luxurious.
     </p>
 
     <p>
-      Tailored Solutions for Every Preference : Personalisation is the cornerstone of luxury. It is the ability to translate unique preferences into tangible design elements that make spaces distinctly personal and luxurious. Understanding that luxury is a personal journey, Karishma Tiles offers tailored solutions for every taste. Whether you prefer the minimalist allure of monochrome tiles or the intricate patterns of mosaic designs, our collection caters to diverse preferences.
+      Tailored Solutions for Every Preference : Personalisation is the cornerstone of luxury. It is the ability to translate unique preferences into tangible design elements that make spaces distinctly personal and luxurious. Understanding that luxury is a personal journey, Muraliz Tiles offers tailored solutions for every taste. Whether you prefer the minimalist allure of monochrome tiles or the intricate patterns of mosaic designs, our collection caters to diverse preferences.
     </p>
 
     <p>
-      Unmatched Variety : Versatility in design allows for creative expression, enabling spaces to embody individuality while maintaining a luxurious allure. Explore a world of possibilities with Karishma Tiles' diverse range of Luxury Bathroom Tiles. From floor tiles that ground your space in sophistication to wall tiles that redefine vertical elegance, our collection ensures a cohesive and luxurious aesthetic in every corner of your bathroom.
+      Unmatched Variety : Versatility in design allows for creative expression, enabling spaces to embody individuality while maintaining a luxurious allure. Explore a world of possibilities with Muraliz Tiles' diverse range of Luxury Bathroom Tiles. From floor tiles that ground your space in sophistication to wall tiles that redefine vertical elegance, our collection ensures a cohesive and luxurious aesthetic in every corner of your bathroom.
     </p>
 
     <p>
-      Karishma Tiles continues to redefine opulence, offering a versatile range of luxury bathroom tiles that transcend boundaries, ensuring that every corner of your bathroom embodies the essence of timeless luxury. Immerse yourself in this world of sophistication, and transform your space into a sanctuary of unparalleled beauty and refinement.
+      Muraliz Tiles continues to redefine opulence, offering a versatile range of luxury bathroom tiles that transcend boundaries, ensuring that every corner of your bathroom embodies the essence of timeless luxury. Immerse yourself in this world of sophistication, and transform your space into a sanctuary of unparalleled beauty and refinement.
     </p>
   </>
   )
@@ -191,7 +191,7 @@ Eco-Friendly Choice : Choosing natural stone wall cladding tiles also aligns wit
         As we enter a new era of interior design, tiles continue to be a popular choice for modern homes. 
         With their versatility, durability, and aesthetic appeal, tiles are an excellent option for flooring, 
         walls, backsplashes, and more. If you're planning to renovate or update your home, here are the top 
-        10 tile trends for modern homes that you should consider, brought to you by Karishma Tiles and Surfaces.
+        10 tile trends for modern homes that you should consider, brought to you by Muraliz Tiles and Surfaces.
       </p>
 
       <p>
@@ -357,7 +357,7 @@ Natural beauty: Natural stone tiles are quarried from the earth, so each piece h
         Value: Natural stone tiles can add value to your property. They are a timeless and classic choice that can enhance the overall aesthetic appeal of your home or office. Additionally, they are low-maintenance and long-lasting, which can save you money in the long run.
       </p>
       <p>
-        In conclusion, natural stone tiles are a beautiful and practical choice for any space. They offer natural beauty, durability, versatility, and value that can enhance the overall look and feel of your home or office. If you are considering using natural stone tiles for your next project, be sure to choose a reputable supplier like Karishma Tiles and Surfaces to ensure that you get high-quality products that will last for years to come.
+        In conclusion, natural stone tiles are a beautiful and practical choice for any space. They offer natural beauty, durability, versatility, and value that can enhance the overall look and feel of your home or office. If you are considering using natural stone tiles for your next project, be sure to choose a reputable supplier like Muraliz Tiles and Surfaces to ensure that you get high-quality products that will last for years to come.
       </p>
 
 
@@ -468,7 +468,7 @@ Natural beauty: Natural stone tiles are quarried from the earth, so each piece h
         Low Maintenance: Porcelain tiles are easy to clean and maintain. They are resistant to stains and moisture, making them ideal for kitchens and bathrooms. Regular sweeping and mopping are usually sufficient to keep them looking their best. Additionally, porcelain tiles do not require sealing like natural stone tiles, which can save you time and money in the long run.
         </p>
         <p>
-        In conclusion, porcelain tiles are a durable, versatile, and low-maintenance option for flooring and wall cladding. With their wide range of colors, patterns, and textures, they can enhance the aesthetic appeal of any space while providing practical benefits. If you are considering porcelain tiles for your next project, be sure to choose a reputable supplier like Karishma Tiles and Surfaces to ensure that you get high-quality products that will last for years to come.
+        In conclusion, porcelain tiles are a durable, versatile, and low-maintenance option for flooring and wall cladding. With their wide range of colors, patterns, and textures, they can enhance the aesthetic appeal of any space while providing practical benefits. If you are considering porcelain tiles for your next project, be sure to choose a reputable supplier like Muraliz Tiles and Surfaces to ensure that you get high-quality products that will last for years to come.
         </p>
 
 
@@ -528,7 +528,7 @@ Regular Sweeping or Vacuuming: Regular sweeping or vacuuming is crucial to preve
         Avoid Standing Water: Standing water can seep into porous tiles and grout lines, causing damage and promoting mold growth. Wipe up standing water promptly, especially in areas prone to water exposure, such as bathrooms and kitchens. Use bath mats or rugs in high-moisture areas to absorb excess water. Sealants: If you have natural stone tiles or unglazed tiles, it's important to apply a sealant to protect them from staining and damage. Sealants create a barrier on the surface of the tiles, preventing liquids from penetrating and causing damage. Follow the manufacturer's instructions for sealing your tiles and reapply as needed.
       </p>
       <p>
-        In conclusion, proper cleaning and maintenance are essential to keeping your tiles looking new and preserving their longevity. Regular sweeping or vacuuming, using the right cleaning products, regular sealing, and avoiding standing water are all important tips to help you maintain the beauty and durability of your tiles. If you have any specific questions about tile cleaning and maintenance, be sure to consult with a professional or contact a reputable supplier like Karishma Tiles and Surfaces for expert advice.
+        In conclusion, proper cleaning and maintenance are essential to keeping your tiles looking new and preserving their longevity. Regular sweeping or vacuuming, using the right cleaning products, regular sealing, and avoiding standing water are all important tips to help you maintain the beauty and durability of your tiles. If you have any specific questions about tile cleaning and maintenance, be sure to consult with a professional or contact a reputable supplier like Muraliz Tiles and Surfaces for expert advice.
         </p>
         </>
     )
