@@ -1,152 +1,120 @@
 "use client";
-import { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 
-const clienteleData = [
-  {
-    id: 1,
-    title: "Projects",
-    image: "https://www.celestile.com/images/cli2.jpg",
-    shortDesc: "Our team's scrupulous vision for designs contributes to the creation of workspaces, inducing the space with inspiration, making a mark in the world.",
-  },
-  {
-    id: 2,
-    title: "Celebrities",
-    image: "https://www.celestile.com/images/cli3.jpg",
-    shortDesc: "From their reel life to creating their environment of real life, we have designed some chic yet cosy decor.",
-  },
-  {
-    id: 3,
-    title: "Hospitality",
-    image: "https://www.celestile.com/images/cli1.jpg",
-    shortDesc: "Creating world-class surface experiences for the hotel industry, defining luxury and elegance.",
-  },
-  {
-    id: 4,
-    title: "Residential",
-    image: "https://www.celestile.com/images/cli3.jpg",
-    shortDesc: "Crafting homes that tell a story of elegance and comfort.",
-  }
-];
+import Image from "next/image";
+import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
 
-const ClienteleSection = () => {
-  const [activeCard, setActiveCard] = useState(null);
-  const scrollRef = useRef(null);
-  const [isHovered, setIsHovered] = useState(false);
-
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    let scrollInterval;
-
-    const startScrolling = () => {
-      scrollInterval = setInterval(() => {
-        if (scrollContainer && !activeCard && !isHovered) {
-          scrollContainer.scrollLeft += 1;
-
-          if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-            scrollContainer.scrollLeft = 0;
-          }
-        }
-      }, 20);
-    };
-
-    startScrolling();
-    return () => clearInterval(scrollInterval);
-  }, [activeCard, isHovered]);
-
-  const handleCardClick = (id) => {
-    setActiveCard(activeCard === id ? null : id);
-  };
+export default function ClienteleSection() {
+  const data = [
+    {
+      title: "Temple Design",
+      text: "We create divine temple spaces that bring peace, spirituality, and timeless elegance into your surroundings.",
+      img: "/temple.jpg",
+    },
+    {
+      title: "Modular Kitchen",
+      text: "Modern kitchen designs crafted for functionality, comfort, and a seamless cooking experience with a stylish touch.",
+      img: "/kitchen.jpg",
+    },
+    {
+      title: "Elevation Design",
+      text: "Innovative elevation designs that enhance the exterior look of your space with a unique and impressive identity.",
+      img: "/elevation.jpg",
+    },
+    {
+      title: "Designer Walls",
+      text: "Creative wall designs that add texture, depth, and a premium aesthetic feel to your interiors.",
+      img: "/designing_wall.jpg",
+    },
+  ];
 
   return (
-    <section className="bg-[#5a5a5a] py-24 px-6 md:px-[8%] relative overflow-hidden flex items-center min-h-[700px]">
+    <section className="bg-gray-300 py-16 px-4">
 
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none bg-[url('/blueprint-pattern.png')] bg-repeat"></div>
+      <h2 className="text-center text-4xl md:text-5xl font-serif tracking-[6px]">
+        CLIENTELE
+      </h2>
 
-      <div className="max-w-8xl mx-auto flex flex-col lg:flex-row items-center justify-between w-full gap-12 relative z-10">
+      {/* GOLDEN DIVIDER */}
+      <div className="flex justify-center items-center gap-3 mt-3 mb-10">
+        <div className="w-14 h-[2px] bg-[#b89b5e]"></div>
+        <span className="text-[#b89b5e] text-xl">♡</span>
+        <div className="w-14 h-[2px] bg-[#b89b5e]"></div>
+      </div>
 
-        {/* Left */}
-        <div className="w-full lg:w-[30%] text-white">
-          <h2 className="text-5xl md:text-6xl font-bold mb-4 tracking-tight">Clientele</h2>
-          <p className="text-xl italic font-light opacity-90 mb-6 border-l-2 border-[#b89b5e] pl-4">
-            Believing spaces are a reflection of people,
-          </p>
-          <p className="text-base font-light leading-relaxed opacity-70 max-w-sm">
-            Celes'tile leaves no stone unturned while fabricating any space with its threads of absolute panache.
-          </p>
-
-          <div className="flex gap-4 mt-10">
-            <div className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center cursor-pointer hover:bg-white/10">←</div>
-            <div className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center cursor-pointer hover:bg-white/10">→</div>
-          </div>
-        </div>
-
-        {/* Right Slider */}
-        <div
-          className="w-full lg:w-[70%] overflow-hidden"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+      <div className="max-w-6xl mx-auto">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3500 }}
+          loop={true}
         >
-          <div
-            ref={scrollRef}
-            className="flex gap-8 overflow-x-hidden whitespace-nowrap py-10 no-scrollbar"
-          >
-            {[...clienteleData, ...clienteleData].map((item, index) => {
-              const uniqueId = `${item.id}-${index}`;
-              const isActive = activeCard === uniqueId;
+          {data.map((item, i) => (
+            <SwiperSlide key={i}>
+              <div className="grid grid-cols-1 md:grid-cols-2 bg-white rounded-2xl overflow-hidden shadow-lg">
 
-              return (
-                <div
-                  key={uniqueId}
-                  onClick={() => handleCardClick(uniqueId)}
-                  className="relative w-[280px] md:w-[380px] h-[500px] cursor-pointer flex-shrink-0"
-                >
-                  <div className="relative w-full h-full overflow-hidden shadow-2xl">
-                    <img 
-                      src={item.image}
-                      alt={item.title}
-                      // fill
-                      className="object-cover"
-                    />
-
-                    {/* Default */}
-                    <div className={`absolute bottom-0 left-0 right-0 bg-white/95 py-5 text-center transition-all duration-500 ${isActive ? 'translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`}>
-                      <h3 className="text-gray-900 font-bold uppercase tracking-[0.3em] text-xs">
-                        {item.title}
-                      </h3>
-                    </div>
-
-                    {/* Active */}
-                    <div className={`absolute inset-0 flex items-center justify-center p-8 transition-all duration-500 bg-black/30 ${isActive ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-                      <div className="bg-white p-8 w-full shadow-2xl">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-2 uppercase">
-                          {item.title}
-                        </h3>
-                        <p className="text-[13px] text-gray-600 mb-6 italic">
-                          {item.shortDesc}
-                        </p>
-
-                        <Link href="/clientele" onClick={(e) => e.stopPropagation()}>
-                          <span className="text-[#b89b5e] font-bold text-[11px] uppercase border-b-2 border-[#b89b5e] pb-1 cursor-pointer">
-                            Learn More
-                          </span>
-                        </Link>
-
-                      </div>
-                    </div>
-
-                  </div>
+                {/* LEFT IMAGE */}
+                <div className="relative w-full h-[250px] md:h-[400px]">
+                  <Image
+                    src={item.img}
+                    alt="client"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              );
-            })}
-          </div>
-        </div>
 
+                {/* RIGHT CONTENT */}
+                <div className="p-6 md:p-10 flex flex-col justify-between">
+
+                  <div>
+                    {/* ⭐ REAL STARS (SVG) */}
+                    <div className="flex gap-1 mb-2">
+                      {[...Array(5)].map((_, i) => (
+                        <svg
+                          key={i}
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#b89b5e"
+                          viewBox="0 0 24 24"
+                          strokeWidth="0"
+                          className="w-5 h-5"
+                        >
+                          <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.036 6.26a1 1 0 00.95.69h6.588c.969 0 1.371 1.24.588 1.81l-5.329 3.872a1 1 0 00-.364 1.118l2.036 6.26c.3.921-.755 1.688-1.54 1.118l-5.329-3.872a1 1 0 00-1.176 0l-5.329 3.872c-.784.57-1.838-.197-1.539-1.118l2.036-6.26a1 1 0 00-.364-1.118L.98 11.687c-.783-.57-.38-1.81.588-1.81h6.588a1 1 0 00.95-.69l2.036-6.26z" />
+                        </svg>
+                      ))}
+                    </div>
+
+                    <p className="text-[#b89b5e] text-sm font-semibold tracking-wider">
+                      CLIENT TYPE
+                    </p>
+
+                    <h3 className="text-2xl font-bold my-2">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-gray-600 italic leading-relaxed">
+                      {item.text}
+                    </p>
+                  </div>
+
+                  {/* GOLDEN BUTTON */}
+                  <div className="mt-8 border-t pt-4">
+                    <Link href="/clientele">
+                      <span className="text-[#b89b5e] text-sm font-semibold cursor-pointer border-b border-[#b89b5e] hover:text-[#a38950] transition">
+                        Learn More →
+                      </span>
+                    </Link>
+                  </div>
+
+                </div>
+
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
-};
-
-export default ClienteleSection;
+}
